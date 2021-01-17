@@ -57,6 +57,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBase\DatabaseFacyory.cs" />
+    <Compile Include="DataBase\FetchData.cs" />
+    <Compile Include="DataBase\IConnection.cs" />
+    <Compile Include="DataBase\Insert.cs" />
+    <Compile Include="DataBase\Update.cs" />
     <Compile Include="MainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
