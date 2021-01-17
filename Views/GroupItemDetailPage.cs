@@ -11,16 +11,7 @@ namespace ScrumTaskBoard
     {
         PageGroup pageGroupCore;
         int indexCore;
-        public GroupItemDetailPage(SampleDataItem item, PageGroup child, int index)
-        {
-            InitializeComponent();
-            pageGroupCore = child;
-            indexCore = index;
-            labelTitle.Text = item.Title;
-            labelSubtitle.Text = item.Subtitle;
-            imageControl.Image = DevExpress.Utils.ResourceImageHelper.CreateImageFromResources(item.ImagePath, typeof(ItemDetailPage).Assembly);
-            labelDescription.Text = item.Description;
-        }
+       
         private void imageControlClick(object sender, EventArgs e)
         {
             BaseContentContainer documentContainer = pageGroupCore.Parent as BaseContentContainer;
