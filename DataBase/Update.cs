@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ScrumTaskBoard.DataBase
 {
-    class Update:IConnection
+    class Update:Connection
     {
 
     }

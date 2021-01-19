@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace ScrumTaskBoard.DataBase
 {
-    interface IConnection
+    class Delete
     {
-
     }
 }
