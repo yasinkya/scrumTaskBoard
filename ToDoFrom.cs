@@ -32,7 +32,8 @@ namespace ScrumTaskBoard
             grpcnt.Dock = DockStyle.None;
             grpcnt.Location = new Point(47, 50);
             grpcnt.Text = "DENEME";
-            grpcnt.CaptionImageOptions.SvgImage = DevExpress.Utils.Svg.SvgImage.FromResources("next.svg", typeof(DevExpress.Utils.Svg.SvgImageCache).Assembly);
+            grpcnt.CaptionImageOptions.SvgImage = DevExpress.Utils.Svg.SvgImage.FromFile(@"C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\Assets\svg\alarm.svg");
+            grpcnt.CaptionImageOptions.SvgImageSize = new Size(50, 50);
             //System.Drawing.Bitmap, SvgImage = DevExpress.Utils.Svg.SvgImage
 
             tileControl.Controls.Add(grpcnt);
