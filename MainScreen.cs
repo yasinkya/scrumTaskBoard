@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DevExpress.XtraBars.Navigation;
 
 namespace ScrumTaskBoard
 {
@@ -44,12 +45,37 @@ namespace ScrumTaskBoard
             ToDoFrom toDoFrom = new ToDoFrom();
             toDoFrom.Dock = DockStyle.Fill;
             toDoFrom.BorderStyle = BorderStyle.None;
-            
-            
+
+
 
             toDoFrom.addNew();
             TodoPanel.Controls.Add(toDoFrom);
             toDoFrom.Show();
+
+
+        }
+
+        internal void taskClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("oleeeyy");
+
+        }
+
+       bool inserted;
+        AccordionControlElement acEl = new AccordionControlElement();
+        private void prokectElements_Click(object sender, EventArgs e)
+        {
+
+            if (inserted) 
+            {
+                
+                acEl.Text = "asdfa";
+                acEl.Click += taskClick;
+                inserted = true;
+                projectElements.Elements.Add(acEl);
+            }
+
+
 
             
         }
