@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
             this.DesingFormCont = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.TodoPanel = new DevExpress.XtraEditors.PanelControl();
             this.toDoGroup = new DevExpress.XtraEditors.GroupControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
@@ -45,18 +46,19 @@
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.TodoPanel = new DevExpress.XtraEditors.PanelControl();
             this.DesingFormCont.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TodoPanel)).BeginInit();
+            this.TodoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toDoGroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TodoPanel)).BeginInit();
-            this.TodoPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // DesingFormCont
             // 
+            this.DesingFormCont.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.DesingFormCont.Appearance.Options.UseBackColor = true;
             this.DesingFormCont.Controls.Add(this.TodoPanel);
             this.DesingFormCont.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DesingFormCont.Location = new System.Drawing.Point(212, 27);
@@ -66,6 +68,19 @@
             this.DesingFormCont.TabIndex = 0;
             this.DesingFormCont.Click += new System.EventHandler(this.fluentDesignFormContainer1_Click);
             // 
+            // TodoPanel
+            // 
+            this.TodoPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TodoPanel.Appearance.Options.UseBackColor = true;
+            this.TodoPanel.AutoSize = true;
+            this.TodoPanel.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.TodoPanel.Controls.Add(this.toDoGroup);
+            this.TodoPanel.Location = new System.Drawing.Point(60, 10);
+            this.TodoPanel.Name = "TodoPanel";
+            this.TodoPanel.Size = new System.Drawing.Size(330, 938);
+            this.TodoPanel.TabIndex = 2;
+            // 
             // toDoGroup
             // 
             this.toDoGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -74,7 +89,7 @@
             this.toDoGroup.Appearance.Options.UseBackColor = true;
             this.toDoGroup.AutoSize = true;
             this.toDoGroup.CaptionImageOptions.Location = DevExpress.Utils.GroupElementLocation.BeforeText;
-            this.toDoGroup.CaptionImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("groupControl1.CaptionImageOptions.SvgImage")));
+            this.toDoGroup.CaptionImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("toDoGroup.CaptionImageOptions.SvgImage")));
             this.toDoGroup.CaptionLocation = DevExpress.Utils.Locations.Top;
             this.toDoGroup.Location = new System.Drawing.Point(5, 5);
             this.toDoGroup.Name = "toDoGroup";
@@ -186,19 +201,6 @@
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
-            // TodoPanel
-            // 
-            this.TodoPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.TodoPanel.Appearance.Options.UseBackColor = true;
-            this.TodoPanel.AutoSize = true;
-            this.TodoPanel.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.TodoPanel.Controls.Add(this.toDoGroup);
-            this.TodoPanel.Location = new System.Drawing.Point(60, 10);
-            this.TodoPanel.Name = "TodoPanel";
-            this.TodoPanel.Size = new System.Drawing.Size(330, 938);
-            this.TodoPanel.TabIndex = 2;
-            // 
             // MainScreen
             // 
             this.Appearance.Options.UseFont = true;
@@ -222,13 +224,13 @@
             this.Load += new System.EventHandler(this.MainScreen_Load);
             this.DesingFormCont.ResumeLayout(false);
             this.DesingFormCont.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TodoPanel)).EndInit();
+            this.TodoPanel.ResumeLayout(false);
+            this.TodoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toDoGroup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TodoPanel)).EndInit();
-            this.TodoPanel.ResumeLayout(false);
-            this.TodoPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }

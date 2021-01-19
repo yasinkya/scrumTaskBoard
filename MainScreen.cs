@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,17 +39,19 @@ namespace ScrumTaskBoard
         }
 
         private void MainScreen_Load(object sender, EventArgs e)
-        { 
-            
+        {
+
             ToDoFrom toDoFrom = new ToDoFrom();
             toDoFrom.Dock = DockStyle.Fill;
             toDoFrom.BorderStyle = BorderStyle.None;
+            
+            
+
+            toDoFrom.addNew();
             TodoPanel.Controls.Add(toDoFrom);
             toDoFrom.Show();
 
-
             
-
         }
     }
 }

@@ -13,40 +13,34 @@ namespace ScrumTaskBoard
 {
     public partial class ToDoFrom : DevExpress.XtraEditors.XtraUserControl
     {
+        TileControl tileControl = new TileControl();
         public ToDoFrom()
         {
             InitializeComponent();
+            tileControl.BackColor = Color.FromArgb(60, 60, 60);
+            tileControl.Dock = DockStyle.Fill; 
+            this.Controls.Add(tileControl);
+        }
+        
+        public void addNew()
+        {
+
             GroupControl grpcnt = new GroupControl();
-            int x = groupControl1.Location.X;
-            int y = groupControl1.Location.Y;
-            grpcnt.Size = groupControl1.Size;
-            grpcnt.Location = new Point(0, groupControl1.Height*2);
-            tileControl1.Controls.Add(grpcnt);
-        }
+            grpcnt.Size= new Size(320,150);
+            grpcnt.Anchor = AnchorStyles.Left;
+            grpcnt.Anchor = AnchorStyles.Right;
+            grpcnt.Dock = DockStyle.None;
+            grpcnt.Location = new Point(47, 50);
+            grpcnt.Text = "DENEME";
+            grpcnt.CaptionImageOptions.SvgImage = DevExpress.Utils.Svg.SvgImage.FromResources("next.svg", typeof(DevExpress.Utils.Svg.SvgImageCache).Assembly);
+            //System.Drawing.Bitmap, SvgImage = DevExpress.Utils.Svg.SvgImage
 
-        private void tileControl1_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Test");
+            tileControl.Controls.Add(grpcnt);
         }
 
         private void groupControl1_Paint(object sender, PaintEventArgs e)
         {
-            Button btn = new Button();
-            btn.Text = "BOTTOONN";
-            btn.Location = new Point(groupControl1.Location.X + 50, groupControl1.Location.Y + 50);
-            groupControl1.Controls.Add(btn);
 
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show("Test");
         }
     }
 }

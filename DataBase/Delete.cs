@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ScrumTaskBoard.DataBase
 {
-    class Delete
+    class Delete:Connection
     {
+        //public void 
     }
 }

@@ -57,9 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataBase\DatabaseFacyory.cs" />
+    <Compile Include="DataBase\Delete.cs" />
     <Compile Include="DataBase\FetchData.cs" />
-    <Compile Include="DataBase\IConnection.cs" />
+    <Compile Include="DataBase\Connection.cs" />
     <Compile Include="DataBase\Insert.cs" />
     <Compile Include="DataBase\Update.cs" />
     <Compile Include="MainScreen.cs">
@@ -68,6 +68,14 @@
     <Compile Include="MainScreen.Designer.cs">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ScrumTaskBoardDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScrumTaskBoardDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Structures\Project.cs" />
+    <Compile Include="Structures\Task.cs" />
+    <Compile Include="Structures\User.cs" />
     <Compile Include="ToDoFrom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +137,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ScrumTaskBoardDataSet.xsc">
+      <DependentUpon>ScrumTaskBoardDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ScrumTaskBoardDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScrumTaskBoardDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScrumTaskBoardDataSet.xss">
+      <DependentUpon>ScrumTaskBoardDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assets\DarkGray.png" />
@@ -138,9 +157,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -4,14 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 
 namespace ScrumTaskBoard.DataBase
 {
     abstract class Connection
     {
-        SqlConnection Baglanti = new SqlConnection();
-        string BaglantiAdresi = "Server=.;Database=Hokumus;User Id=sa;Password=123456;";
-        SqlConnection Baglanti = new SqlConnection(BaglantiAdresi);
+        public SqlConnection connect;
+        public SqlCommand cmd;
+        public SqlDataReader dataR;
+
+        public Connection()
+        {
+            
+            Connect();
+        }
+
+        public void Connect()
+        {
+            connect = new SqlConnection("server=KAYA; Initial Catalog=ScrumTaskBoard;Integrated Security=SSPI");
+            cmd = new SqlCommand();
+            cmd.Connection = connect;
+        }
+
+        
     }
 }
