@@ -16,6 +16,7 @@ namespace ScrumTaskBoard
     {
 
         Adapter adapter = new Adapter();
+        DataBase.FetchData fetchData = new DataBase.FetchData();
         bool insertedProj;
 
         public MainScreen()
@@ -29,32 +30,24 @@ namespace ScrumTaskBoard
 
             if (!insertedProj)
             {
-                DataBase.FetchData fetchData = new DataBase.FetchData();
-                AccordionControlElement acEl;
-
-                foreach (Structures.Project project in fetchData.ProjectList())
+                foreach (AccordionControlElement acEl in adapter.Projects())
                 {
-                    acEl = new AccordionControlElement();
-                    acEl.Text = project.ProjectId + "-" + project.ProjectName;
-                    acEl.Style = ElementStyle.Group;
                     acEl.Click += ProjectsClick;
                     projectElements.Elements.Add(acEl);
                 }
-
-
                 insertedProj = true;
             }
-
+            
             ToDoFrom toDoFrom = new ToDoFrom();
             toDoFrom.Dock = DockStyle.Fill;
             toDoFrom.BorderStyle = BorderStyle.None;
 
 
-
+            
             toDoFrom.addNew();
             TodoPanel.Controls.Add(toDoFrom);
             toDoFrom.Show();
-
+            //toDoFrom.Enabled = false;
 
         }
 
@@ -69,9 +62,10 @@ namespace ScrumTaskBoard
         {
 
         }
-
+        string clicked;
         private void accordionControlElement5_Click(object sender, EventArgs e)
         {
+            clicked = "00";
             MessageBox.Show("Test");
         }
 
@@ -87,9 +81,14 @@ namespace ScrumTaskBoard
 
 
 
-        internal void taskClick(object sender, EventArgs e)
+        public async void taskClick(object sender, EventArgs e)
         {
-            MessageBox.Show("oleeeyy");
+            
+            if (clicked == "00")
+            {
+                 MessageBox.Show("oleeeyy");
+                
+            }
 
         }
 

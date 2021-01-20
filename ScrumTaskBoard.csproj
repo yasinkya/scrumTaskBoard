@@ -57,7 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapter.cs" />
+    <Compile Include="Adapter\Adapter.cs" />
     <Compile Include="DataBase\Delete.cs" />
     <Compile Include="DataBase\FetchData.cs" />
     <Compile Include="DataBase\Connection.cs" />
@@ -77,10 +77,10 @@
     <Compile Include="Structures\Project.cs" />
     <Compile Include="Structures\Task.cs" />
     <Compile Include="Structures\User.cs" />
-    <Compile Include="ToDoFrom.cs">
+    <Compile Include="Adapter\ToDoFrom.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ToDoFrom.Designer.cs">
+    <Compile Include="Adapter\ToDoFrom.Designer.cs">
       <DependentUpon>ToDoFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\GroupDetailPage.cs" />
@@ -99,11 +99,17 @@
     <Compile Include="Views\GroupItemDetailPage.Designer.cs">
       <DependentUpon>GroupItemDetailPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskForm.Designer.cs">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="ToDoFrom.resx">
+    <EmbeddedResource Include="Adapter\ToDoFrom.resx">
       <DependentUpon>ToDoFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\GroupDetailPage.resx">
@@ -124,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="Views\GroupItemDetailPage.resx">
       <DependentUpon>GroupItemDetailPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskForm.resx">
+      <DependentUpon>TaskForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -17,11 +17,17 @@ namespace ScrumTaskBoard
         public ToDoFrom()
         {
             InitializeComponent();
+            tileControl = new TileControl();
             tileControl.BackColor = Color.FromArgb(60, 60, 60);
             tileControl.Dock = DockStyle.Fill; 
             this.Controls.Add(tileControl);
         }
-        
+
+        private void ToDoFrom_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public void addNew()
         {
             Size size = new Size(315, 150);
@@ -56,14 +62,12 @@ namespace ScrumTaskBoard
         MainScreen mainScreen = new MainScreen();
 
 
-        private void groupControl1_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void groupControl1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("tıklandıı");
+            MessageBox.Show("sdfgdsgdsfg");
 
         }
+
+        
     }
 }

@@ -16,12 +16,13 @@ namespace ScrumTaskBoard
         public List<AccordionControlElement> Projects()
         {
             List<AccordionControlElement> elements = new List<AccordionControlElement>();
-            AccordionControlElement acEl = new AccordionControlElement();
+            AccordionControlElement acEl;
             
             foreach(Structures.Project project in fetchData.ProjectList())
             {
-                acEl.Text = project.ProjectId + "-" + project.ProjectName;
-                acEl.Style = ElementStyle.Item;
+                acEl = new AccordionControlElement();
+                acEl.Text = "  ->  "+project.ProjectId + " - " + project.ProjectName;
+                acEl.Style = ElementStyle.Group;
                 elements.Add(acEl);
                 
             }

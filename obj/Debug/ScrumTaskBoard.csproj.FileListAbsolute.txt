@@ -199,3 +199,4 @@ C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\bin\Debug\ru\DevExpress.Offi
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.ToDoFrom.resources
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.Views.GroupDetailPage.resources
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.Views.GroupItemDetailPage.resources
+C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.TaskForm.resources
