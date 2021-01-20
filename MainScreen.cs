@@ -14,9 +14,48 @@ namespace ScrumTaskBoard
 {
     public partial class MainScreen : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
+
+        Adapter adapter = new Adapter();
+        bool insertedProj;
+
         public MainScreen()
         {
             InitializeComponent();
+
+        }
+
+        private void MainScreen_Load(object sender, EventArgs e)
+        {
+
+            if (!insertedProj)
+            {
+                DataBase.FetchData fetchData = new DataBase.FetchData();
+                AccordionControlElement acEl;
+
+                foreach (Structures.Project project in fetchData.ProjectList())
+                {
+                    acEl = new AccordionControlElement();
+                    acEl.Text = project.ProjectId + "-" + project.ProjectName;
+                    acEl.Style = ElementStyle.Group;
+                    acEl.Click += taskClick;
+                    projectElements.Elements.Add(acEl);
+                }
+
+
+                insertedProj = true;
+            }
+
+            ToDoFrom toDoFrom = new ToDoFrom();
+            toDoFrom.Dock = DockStyle.Fill;
+            toDoFrom.BorderStyle = BorderStyle.None;
+
+
+
+            toDoFrom.addNew();
+            TodoPanel.Controls.Add(toDoFrom);
+            toDoFrom.Show();
+
+
         }
 
         private void accordionControlElement4_Click(object sender, EventArgs e)
@@ -39,21 +78,7 @@ namespace ScrumTaskBoard
 
         }
 
-        private void MainScreen_Load(object sender, EventArgs e)
-        {
 
-            ToDoFrom toDoFrom = new ToDoFrom();
-            toDoFrom.Dock = DockStyle.Fill;
-            toDoFrom.BorderStyle = BorderStyle.None;
-
-
-
-            toDoFrom.addNew();
-            TodoPanel.Controls.Add(toDoFrom);
-            toDoFrom.Show();
-
-
-        }
 
         internal void taskClick(object sender, EventArgs e)
         {
@@ -61,26 +86,9 @@ namespace ScrumTaskBoard
 
         }
 
-       bool inserted;
-        AccordionControlElement acEl = new AccordionControlElement();
+
         private void prokectElements_Click(object sender, EventArgs e)
         {
-
-            if (!inserted) 
-            {
-                
-                acEl.Text = "asdfa";
-                acEl.Click += taskClick;
-                acEl.Style=
-                projectElements.Elements.Add(acEl);
-                
-
-                inserted = true;
-            }
-
-
-
-            
         }
     }
 }

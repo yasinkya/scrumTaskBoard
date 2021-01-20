@@ -10,7 +10,8 @@ namespace ScrumTaskBoard.DataBase
 {
     class FetchData:Connection
     {
-        public List<Structures.User> UserList()
+        
+        public List<Structures.User> UserList() //FETCH USER LIST 
         {
             try
             {
@@ -44,5 +45,40 @@ namespace ScrumTaskBoard.DataBase
             }
             
         }
+
+        public List<Structures.Project> ProjectList()   //FETCH PROJECT LIST 
+        {
+            try
+            {
+                List<Structures.Project> projects= new List<Structures.Project>();
+
+                cmd.CommandText = "select * From projects";
+                cmd.CommandType = CommandType.Text;
+                connect.Open();
+                dataR = cmd.ExecuteReader();
+
+                while (dataR.Read())
+                {
+                    Structures.Project project= new Structures.Project();
+                    project.ProjectId = Convert.ToInt32(dataR[0].ToString());
+                    project.ProjectName = dataR[1].ToString();
+                    project.ProjectImportance = dataR[2].ToString();
+
+                    projects.Add(project);
+                }
+
+                connect.Close();
+                return projects;
+            }
+            catch
+            {
+                System.Windows.Forms.MessageBox.Show("error!");
+                throw;
+            }
+
+        }
+
+
+
     }
 }

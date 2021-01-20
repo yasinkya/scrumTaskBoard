@@ -124,10 +124,8 @@ C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\bin\Debug\ja\DevExpress.Pdf.
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\bin\Debug\ru\DevExpress.Pdf.v20.2.Core.resources.dll
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.csprojAssemblyReference.cache
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.MainScreen.resources
-C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.GroupDetailPage.resources
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.ItemDetailPage.resources
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.Properties.Resources.resources
-C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.GroupItemDetailPage.resources
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.csproj.GenerateResource.cache
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.exe.licenses
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.csproj.CoreCompileInputs.cache
@@ -199,3 +197,5 @@ C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\bin\Debug\es\DevExpress.Offi
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\bin\Debug\ja\DevExpress.Office.v20.2.Core.resources.dll
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\bin\Debug\ru\DevExpress.Office.v20.2.Core.resources.dll
 C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.ToDoFrom.resources
+C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.Views.GroupDetailPage.resources
+C:\Users\Kaya\Desktop\ScrumTaskBoard\ScrumTaskBoard\obj\Debug\ScrumTaskBoard.Views.GroupItemDetailPage.resources

@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter.cs" />
     <Compile Include="DataBase\Delete.cs" />
     <Compile Include="DataBase\FetchData.cs" />
     <Compile Include="DataBase\Connection.cs" />
@@ -82,9 +83,7 @@
     <Compile Include="ToDoFrom.Designer.cs">
       <DependentUpon>ToDoFrom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\GroupDetailPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Views\GroupDetailPage.cs" />
     <Compile Include="Views\GroupDetailPage.Designer.cs">
       <DependentUpon>GroupDetailPage.cs</DependentUpon>
     </Compile>
@@ -96,9 +95,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\GroupItemDetailPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Views\GroupItemDetailPage.cs" />
     <Compile Include="Views\GroupItemDetailPage.Designer.cs">
       <DependentUpon>GroupItemDetailPage.cs</DependentUpon>
     </Compile>

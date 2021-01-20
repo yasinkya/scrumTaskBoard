@@ -131,6 +131,7 @@
             this.moveBtn,
             this.editBtn,
             this.deleteBtn});
+            this.tasksElement.Expanded = true;
             this.tasksElement.Name = "tasksElement";
             this.tasksElement.Text = "Tasks";
             this.tasksElement.Click += new System.EventHandler(this.accordionControlElement4_Click);
@@ -138,7 +139,6 @@
             // addBtn
             // 
             this.addBtn.Name = "addBtn";
-            this.addBtn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.addBtn.Text = "Add";
             this.addBtn.Click += new System.EventHandler(this.accordionControlElement5_Click);
             // 
@@ -187,7 +187,6 @@
             // logOutBtn
             // 
             this.logOutBtn.Name = "logOutBtn";
-            this.logOutBtn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.logOutBtn.Text = "Log Out";
             // 
             // accordionControlSeparator2
