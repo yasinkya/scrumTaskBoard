@@ -45,9 +45,9 @@
             this.userInfoBtn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.logOutBtn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.projectElements = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator3 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
+            this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.DesingFormCont.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TodoPanel)).BeginInit();
             this.TodoPanel.SuspendLayout();
@@ -194,17 +194,6 @@
             // 
             this.accordionControlSeparator2.Name = "accordionControlSeparator2";
             // 
-            // fluentDesignFormControl1
-            // 
-            this.fluentDesignFormControl1.FluentDesignForm = this;
-            this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
-            this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1720, 27);
-            this.fluentDesignFormControl1.TabIndex = 2;
-            this.fluentDesignFormControl1.TabStop = false;
-            // 
             // projectElements
             // 
             this.projectElements.Expanded = true;
@@ -215,6 +204,17 @@
             // accordionControlSeparator3
             // 
             this.accordionControlSeparator3.Name = "accordionControlSeparator3";
+            // 
+            // fluentDesignFormControl1
+            // 
+            this.fluentDesignFormControl1.FluentDesignForm = this;
+            this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
+            this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
+            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1720, 27);
+            this.fluentDesignFormControl1.TabIndex = 2;
+            this.fluentDesignFormControl1.TabStop = false;
             // 
             // MainScreen
             // 

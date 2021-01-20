@@ -66,13 +66,16 @@ namespace ScrumTaskBoard
         private void prokectElements_Click(object sender, EventArgs e)
         {
 
-            if (inserted) 
+            if (!inserted) 
             {
                 
                 acEl.Text = "asdfa";
                 acEl.Click += taskClick;
-                inserted = true;
+                acEl.Style=
                 projectElements.Elements.Add(acEl);
+                
+
+                inserted = true;
             }
 
 
