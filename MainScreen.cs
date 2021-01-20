@@ -37,7 +37,7 @@ namespace ScrumTaskBoard
                     acEl = new AccordionControlElement();
                     acEl.Text = project.ProjectId + "-" + project.ProjectName;
                     acEl.Style = ElementStyle.Group;
-                    acEl.Click += taskClick;
+                    acEl.Click += ProjectsClick;
                     projectElements.Elements.Add(acEl);
                 }
 
@@ -55,6 +55,13 @@ namespace ScrumTaskBoard
             TodoPanel.Controls.Add(toDoFrom);
             toDoFrom.Show();
 
+
+        }
+
+        internal void ProjectsClick(object sender, EventArgs e)
+        {
+            string name = (sender as AccordionControlElement).Text;
+            MessageBox.Show(name);
 
         }
 

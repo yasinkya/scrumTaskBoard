@@ -195,7 +195,6 @@
             // 
             // projectElements
             // 
-            this.projectElements.Expanded = true;
             this.projectElements.Name = "projectElements";
             this.projectElements.Text = "Projects";
             this.projectElements.Click += new System.EventHandler(this.prokectElements_Click);
